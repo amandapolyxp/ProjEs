@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+{{ user.extradata.proj|default:"" }}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GitBuster_Login</title>
+    <link rel="stylesheet" href={% static "proj/bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "proj/css/Google-Style-Login.css" %}>
+    <link rel="stylesheet" href={% static "proj/css/styles.css" %}>
+</head>
+
+<body style="color: var(--bs-indigo);background: var(--bs-gray-600);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 6%;margin-bottom: 8%;">
+                <div class="login-card" style="background: #355aa0;margin-top: 100px;margin-left: 85px;">
+                    <p class="profile-name-card" style="color: var(--bs-white);margin-bottom: 20px;">ID do Projeto</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }} <button class="btn btn-primary btn-lg d-block btn-signin w-100" type="submit">Acessar</button>
+                    </form><a class="forgot-password" href="#"></a>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 6%;"><img style="margin-top: 10%;margin-left: 5%;width: 400px;height: 400px;margin-right: 32px;" src={% static "proj/img/ES_LOGO.png" %}></div>
+        </div>
+    </div>
+    <script src={% static "proj/bootstrap/js/bootstrap.min.js" %}></script>
+</body>
+
+</html>

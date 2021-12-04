@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Issues_2</title>
+    <link rel="stylesheet" href={% static "issue/bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "issue/fonts/font-awesome.min.css" %}>
+    <link rel="stylesheet" href={% static "issue/css/Features-Boxed.css" %}>
+    <link rel="stylesheet" href={% static "issue/css/styles.css" %}>
+</head>
+
+<body style="background: var(--bs-gray);border-color: rgb(33,37,41);border-top-color: var(--bs-gray-600);padding: 0px;margin: 0px;height: 768px;">
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-primary" style="font-size: 16px;text-align: justify;background: #355aa0;">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="navbar-toggler-icon"></span><span class="visually-hidden">Toggle navigation</span></button>
+            <div class="collapse navbar-collapse text-start text-primary" id="navcol-1" style="height: 87px;font-size: 16px;border-color: #355aa0;background: #355aa0;color: #355aa0;margin-right: -14px;margin-left: -15px;margin-bottom: -9px;margin-top: -7px;width: 1203px;"><img src={% static "issue/img/Untitled_Artwork.png" %} style="width: 80px;height: 80px;margin-left: 20px;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="Register" style="margin: 0px;margin-right: 10px;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin-right: 10px;">Repositórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin-right: 10px;">Ficheiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="issues.html" style="margin-right: 10px;color: rgba(255,255,255);">Issues</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/templates/login.html" style="margin-right: 10px;font-size: 16px;">Equipas</a></li>
+                </ul>
+                <h1 style="color: rgb(255,255,255);width: 96.8px;font-size: 16px;height: 15.8px;">username</h1><i class="fa fa-user" style="color: rgb(255,255,255);font-size: 27px;height: 29.4px;width: 26.2875px;margin-right: 20px;"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="features-boxed" style="background: var(--bs-gray-600);">
+        <div class="container" style="background: var(--bs-gray-600);margin-top: 97px;">
+            <div class="intro">
+                <h2 class="text-center" style="color: var(--bs-white);margin-top: 0px;">Issues</h2>
+                <header></header>
+            </div>
+            <div class="row justify-content-center features" style="background: var(--bs-gray-600);"></div>
+        </div>
+    </section>
+    <script src={% static "issue/bootstrap/js/bootstrap.min.js" %}></script>
+</body>
+
+</html>

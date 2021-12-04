@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GitBuster_Login</title>
+    <link rel="stylesheet" href={% static "register/bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
+    <link rel="stylesheet" href={% static "register/css/Google-Style-Login.css" %}>
+    <link rel="stylesheet" href={% static "register/css/styles.css" %}>
+</head>
+
+<body style="color: var(--bs-indigo);background: var(--bs-gray-600);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 6%;margin-bottom: 8%;">
+                <div class="login-card" style="background: #355aa0;margin-top: 70px;margin-left: 85px;">
+                    <p class="profile-name-card" style="color: var(--bs-white);font-family: Acme, sans-serif;font-size: 20px;margin-top: 0px;margin-bottom: 15px;">Register</p>
+                    <form method='POST' class="m-auto"><div class="form-group">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                       </div></form><button class="btn btn-primary btn-lg d-block btn-signin w-100" type="Acessar">Sign in</button><a class="forgot-password" href="#"></a>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 6%;"><img style="margin-top: 10%;margin-left: 5%;width: 400px;height: 400px;margin-right: 32px;" src={% static "register/img/ES_LOGO.png" %}></div>
+        </div>
+    </div>
+    <script src={% static "register/bootstrap/js/bootstrap.min.js" %}></script>
+</body>
+
+</html>

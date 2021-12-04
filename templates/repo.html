@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Repo_Navbar</title>
+    <link rel="stylesheet" href={% static "repo/bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "repo/fonts/font-awesome.min.css" %}>
+    <link rel="stylesheet" href={% static "repo/css/styles.css" %}>
+</head>
+
+<body style="background: var(--bs-gray-600);border-color: rgb(33,37,41);border-top-color: var(--bs-gray-600);padding: 0px;margin: 0px;">
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-primary" style="font-size: 16px;text-align: justify;background: #355aa0;">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="navbar-toggler-icon"></span><span class="visually-hidden">Toggle navigation</span></button>
+            <div class="collapse navbar-collapse text-start text-primary" id="navcol-1" style="border-color: #355aa0;background: #355aa0;margin-top: -7px;margin-right: -14px;margin-bottom: -9px;margin-left: -15px;height: 87px;width: 1203px;"><img src={% static "repo/img/ES_LOGO.png" %} width="80" style="margin-left: 20px;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin: 0px;margin-right: 10px;border-color: rgba(255,255,255,0.55);">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" style="margin-right: 10px;">Repositórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin-right: 10px;">Ficheiros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin-right: 10px;">Issues</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="margin-right: 10px;">Equipas</a></li>
+                </ul>
+                <h1 style="color: rgb(255,255,255);width: 96.8px;font-size: 17.520000000000003px;height: 15.8px;">username</h1><i class="fa fa-user" style="color: rgb(255,255,255);font-size: 27px;height: 29.4px;width: 26.2875px;margin-right: 20px;"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col" style="height: 400px;margin: 30px;margin-top: 52px;width: 500px;">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="font-size: 18px;">Repositório</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;ARCH</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DES</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DEV</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ENV</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; PM</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PROC</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PROD</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QA</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RQ</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="button" style="width: 200px;background: var(--bs-gray-600);border-style: none;"><i class="fa fa-folder-open-o"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Test</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src={% static "repo/bootstrap/js/bootstrap.min.js" %}></script>
+</body>
+
+</html>
